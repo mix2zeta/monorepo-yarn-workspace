@@ -1,0 +1,17 @@
+{
+  "name": "monorepo-yarn-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mix2zeta/monorepo-yarn-workspace.git",
+  "author": "Miz Nattawut <nattawut.c@wisesight.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces" : [
+    "app/*",
+    "shared"
+  ],
+  "scripts": {
+    "copy": "cp -R ./shared ./app/projectA/src/shared",
+    "start": "ts-node ./app/projectA/src/index.ts"
+  }
+}

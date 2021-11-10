@@ -1,6 +1,10 @@
 {
   "name": "projectA",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "./dist/app/projectA/src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  }
 }
