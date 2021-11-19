@@ -1,3 +1,3 @@
-# monorepo-lerna
+# monorepo-yarn-workspace
 
-https://github.com/lerna/lerna
+https://classic.yarnpkg.com/lang/en/docs/workspaces/
