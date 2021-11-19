@@ -8,7 +8,7 @@
   "private": true,
   "workspaces" : [
     "app/*",
-    "shared"
+    "library/*"
   ],
   "scripts": {
     "copy": "cp -R ./shared ./app/projectA/src/shared",
