@@ -1,4 +1,4 @@
-name: Publish feature -> image
+name: Deploy image -> server
 on: [workflow_dispatch]
 
 jobs:
