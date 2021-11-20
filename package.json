@@ -8,13 +8,17 @@
   "private": true,
   "workspaces" : [
     "app/*",
-    "library/*"
+    "library"
   ],
   "scripts": {
     "start": "ts-node ./app/projectA/src/index.ts",
     "publish": "./common/publish.sh",
     "publish-watch": "gh run watch",
     "deploy": "gh -R mix2zeta/mock-infra workflow run deploy.yaml",
-    "deploy-watch": "gh -R mix2zeta/mock-infra run watch"
+    "deploy-watch": "gh -R mix2zeta/mock-infra run watch",
+    "A": "yarn workspace @app/projectA",
+    "B": "yarn workspace @app/projectB",
+    "lib": "yarn workspace @miz/library",
+    "compile": "tsc --build --force tsconfig.json"
   }
 }
