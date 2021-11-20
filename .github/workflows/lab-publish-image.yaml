@@ -15,4 +15,6 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+      - name: build images
+        run: docker build -t projecta --file ./common/Dockerfile.ProjectA .
       - run: echo "🍏 This job's status is ${{ job.status }}."
