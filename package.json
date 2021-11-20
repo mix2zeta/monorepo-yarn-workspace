@@ -12,7 +12,9 @@
   ],
   "scripts": {
     "start": "ts-node ./app/projectA/src/index.ts",
-    "publish": "",
-    "deploy": ""
+    "publish": "./common/publish.sh",
+    "publish-watch": "gh run watch",
+    "deploy": "gh -R mix2zeta/mock-infra workflow run deploy.yaml",
+    "deploy-watch": "gh -R mix2zeta/mock-infra run watch"
   }
 }
