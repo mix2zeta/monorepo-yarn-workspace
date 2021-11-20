@@ -1,12 +1,11 @@
 {
   "name": "library",
   "version": "1.0.0",
-  "main": "dist/standard/index.js",
-  "types": "dist/standard/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "tsc --build"
   },
   "dependencies": {
     "tslib": "^2.3.1",

@@ -2,7 +2,7 @@
 import { Sample } from './interface/sample';
 // import { getLogger } from "../../../library/standard/logger"
 // import { getLogger } from "@library/standard/logger"
-import { getLogger, addNum } from 'library/standard';
+import { getLogger, addNum } from 'library';
 
 const aaa: Sample = { name: 'foo' };
 const log = getLogger('bar');
