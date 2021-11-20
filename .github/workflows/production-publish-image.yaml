@@ -1,4 +1,4 @@
-name: Publish feature -> image
+name: Publish Production -> image
 on:
   push:
     tags:

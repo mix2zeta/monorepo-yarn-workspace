@@ -1,4 +1,4 @@
-name: Publish feature -> image
+name: Publish Staging -> image
 
 on:
   push:
