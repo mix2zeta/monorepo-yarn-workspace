@@ -1,4 +1,4 @@
-name: Publish feature [${{ github.ref }}] -> image
+name: Publish feature -> image
 on: [workflow_dispatch]
 
 jobs:
