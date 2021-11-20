@@ -11,7 +11,8 @@
     "library/*"
   ],
   "scripts": {
-    "copy": "cp -R ./shared ./app/projectA/src/shared",
-    "start": "ts-node ./app/projectA/src/index.ts"
+    "start": "ts-node ./app/projectA/src/index.ts",
+    "publish": "",
+    "deploy": ""
   }
 }
