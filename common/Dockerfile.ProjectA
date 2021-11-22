@@ -1,10 +1,12 @@
 FROM node:lts-bullseye-slim
 ENV NODE_ENV=production
 WORKDIR /usr/src
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install --production --silent && mv node_modules ../
-COPY ./app/projectA /usr/src
+COPY ["package.json", "tsconfig.json", "tsconfig.base.json", "./"]
+COPY ./app/projectA /usr/src/app/projectA
+COPY ./library /usr/src/library
+RUN npm install -g typescript
+RUN yarn install && yarn compile
 EXPOSE 3000
 RUN chown -R node /usr/src
 USER node
-CMD ["node", "./dist/app/projectA/src/index.js"]
+CMD ["node", "/usr/src/app/projectA"]

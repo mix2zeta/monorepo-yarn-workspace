@@ -1,20 +1,24 @@
 {
-  "name": "monorepo-yarn-workspace",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/mix2zeta/monorepo-yarn-workspace.git",
-  "author": "Miz Nattawut <nattawut.c@wisesight.com>",
-  "license": "MIT",
-  "private": true,
-  "workspaces" : [
-    "app/*",
-    "library/*"
-  ],
-  "scripts": {
-    "start": "ts-node ./app/projectA/src/index.ts",
-    "publish": "./common/publish.sh",
-    "publish-watch": "gh run watch",
-    "deploy": "gh -R mix2zeta/mock-infra workflow run deploy.yaml",
-    "deploy-watch": "gh -R mix2zeta/mock-infra run watch"
-  }
+    "name": "monorepo-yarn-workspace",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/mix2zeta/monorepo-yarn-workspace.git",
+    "author": "Miz Nattawut <nattawut.c@wisesight.com>",
+    "license": "MIT",
+    "private": true,
+    "workspaces": [
+        "app/*",
+        "library"
+    ],
+    "scripts": {
+        "start": "ts-node ./app/projectA/src/index.ts",
+        "publish": "./common/publish.sh",
+        "publish-w": "gh run watch && notify -m 'build is done'",
+        "deploy": "gh -R mix2zeta/mock-infra workflow run deploy.yaml",
+        "deploy-w": "gh -R mix2zeta/mock-infra run watch",
+        "A": "yarn workspace @app/projectA",
+        "B": "yarn workspace @app/projectB",
+        "lib": "yarn workspace @miz/library",
+        "compile": "tsc --build --force tsconfig.json"
+    }
 }

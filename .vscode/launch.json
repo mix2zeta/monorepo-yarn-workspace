@@ -1,6 +1,21 @@
 {
     "configurations": [
         {
+            "type": "aws-sam",
+            "request": "direct-invoke",
+            "name": "library:standard/logger.getLogger (nodejs14.x)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "${workspaceFolder}/library",
+                "lambdaHandler": "standard/logger.getLogger"
+            },
+            "lambda": {
+                "runtime": "nodejs14.x",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        },
+        {
             "name": "Docker Node.js Launch",
             "type": "docker",
             "request": "launch",

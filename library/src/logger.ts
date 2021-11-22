@@ -22,12 +22,12 @@ export function getLogger(appName: string): winston.Logger {
     format: consoleFormat,
     transports: [
       new winston.transports.Console(),
-      new DailyRotateFile({
-        filename: 'logs/worker-ts-%DATE%.log',
-        datePattern: 'YYYY-MM-DD',
-        zippedArchive: true,
-        maxFiles: '3d',
-      }),
+      // new DailyRotateFile({
+      //   filename: 'logs/worker-ts-%DATE%.log',
+      //   datePattern: 'YYYY-MM-DD',
+      //   zippedArchive: true,
+      //   maxFiles: '3d',
+      // }),
     ],
   });
 }

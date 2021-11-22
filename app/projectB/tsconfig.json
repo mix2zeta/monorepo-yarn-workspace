@@ -11,15 +11,9 @@
         "sourceMap": true,
         "baseUrl": "src",
         "paths": {
-            "@shared/*": [
-                "shared/*"
-            ],
-            "@interface/*": [
-                "interface/*"
-            ]
+            "@interface/*": ["interface/*"],
+            "@library/*": ["../../../library/*"]
         }
     },
-    "include": [
-        "./src/**/*"
-    ]
+    "include": ["./src/**/*", "../../library/**/*"],
 }

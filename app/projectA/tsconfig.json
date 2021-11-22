@@ -1,26 +1,12 @@
 {
+    "extends": "../../tsconfig.base.json",
     "compilerOptions": {
-        "moduleResolution": "node",
-        "outDir": "dist",
-        "target": "ES2021",
-        "module": "CommonJS",
-        "esModuleInterop": true,
-        "strictNullChecks": true,
-        "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true,
-        "sourceMap": true,
-        "baseUrl": "src",
-        "paths": {
-            "@shared/*": [
-                "../../../shared/*"
-            ],
-            "@interface/*": [
-                "interface/*"
-            ],
-        }
+        "rootDir": "src",
+        "outDir": "dist"
     },
-    "include": [
-        "./src/**/*",
-        "../../shared/**/*",
-    ],
+    "references": [
+        {
+            "path": "../../library"
+        }
+    ]
 }

@@ -1,9 +1,14 @@
 {
-  "name": "shared",
+  "name": "library",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
+  "private": true,
+  "scripts": {
+  },
   "dependencies": {
+    "tslib": "^2.3.1",
     "winston": "^3.3.3",
     "winston-daily-rotate-file": "^4.5.5"
   }

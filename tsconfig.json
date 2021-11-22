@@ -1,0 +1,15 @@
+{
+    "references": [
+      {
+        "path": "./app/projectA"
+      },
+      {
+        "path": "./library"
+      }
+    ],
+    "files": [],
+    "include": [],
+    "exclude": [
+      "**/node_modules"
+    ]
+}

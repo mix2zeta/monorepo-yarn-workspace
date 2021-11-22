@@ -1,16 +1,14 @@
 {
-  "name": "@app/projectA",
+  "name": "@app/projectB",
   "version": "1.0.0",
-  "main": "./dist/index.js",
-  "private": true,
+  "main": "./dist/app/projectB/src/index.js",
   "license": "MIT",
+  "private": true,
   "scripts": {
+    "build": "tsc --build"
   },
   "devDependencies": {
     "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
-  },
-  "dependencies": {
-    "library": "1.0.0"
   }
 }

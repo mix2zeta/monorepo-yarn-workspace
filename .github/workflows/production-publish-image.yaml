@@ -1,5 +1,8 @@
-name: Publish feature -> image
-on: [workflow_dispatch]
+name: Publish Production -> image
+on:
+  push:
+    tags:
+      - v[0-9]+.[0-9]+.[0-9]
 
 jobs:
   Explore-GitHub-Actions:
